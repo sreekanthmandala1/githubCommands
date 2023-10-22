@@ -1,0 +1,38 @@
+------------->>>>>reverting<<<<<<----------
+-->git log --oneline
+-->git revert hashNumber (this will revert the commit made in that hashNumber of that file)
+-->git revert HEAD(this will revert to the last commit)
+-->git rebase master (this will take commits and store them outside the repository and keeps the commit log and history of repository clean)
+
+------------------->>>>>>Connecting to remote repository<<<<<<<<--------------
+Add a repository in your github account.
+-->git remote add origin https://github.com/sreekanthmandala1/git-commands.git (This will connect to remote repository. You can find HTTP link in your repository (In clone or download button))
+-->git clone https://github.com/sreekanthmandala1/git-commands.git (This will clone files into your local repository)
+-->git pull origin master (It pulls all the changes made in remote repository into local repository)
+-->git push origin master (It push all the changes made in local repository into remote repository)
+-->git stash -u (To save changes made when they are not in a state to commit them to a repository)
+-->git stash list (modifications made is shown here)
+-->git stash show (For inspecting which files are saved or modified)
+-->git stash apply (To get that file back to commit into repository)
+-->git log (shows all the changes made)
+-->git log --author="sreekanth" (shows the changes made by author sreekanth)
+-->git log --before="2020-07-30" (shows the changes made before 3oth july 2020)
+
+-->git status (This gives information about staging area files, If there are no files in staging area then it returns nothing to commit working tree free)
+-->git config --global user.name "sreekanth"  (This creates a username globally, remove --global to create it in current repository)
+-->git config --global user.email "sreekanthmandalaa@gmail.com"  (This creates a email globally, remove --global to create it in current repository)
+-->git branch (list all the branches)
+-->git branch child (This add new branch with name child)
+-->git checkout child (This will switch to child branch)
+-->git checkout master (This will switch to master branch)
+-->git merge child (This will merge child branch into master branch)
+-->git branch -d child (This will delete child branch)
+-->git branch -D child (This will delete child branch and also unmerged changes in child branch )
+-->git checkout -b shopping (This will create new branch with name shopping and also checks in that branch)
+
+-->mkdir test-repo (This make a folder test-repo)
+-->git init  (This make .git hidden git file in your repository)
+-->git add index.html (This add index.html to staging area)
+-->git add . (This add all files into staging area)
+-->git commit -m "This is Commit message" (This make a commit to local repository and adds a commit message)
+-->git push origin master (It push all the changes made in local repository into remote repository)
